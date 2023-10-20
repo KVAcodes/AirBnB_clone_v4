@@ -11,7 +11,7 @@ $(document).ready(function () {
     $('div.amenities h4').text(amenitiesStr);
   });
   // check status of API
-  $.get('http://localhost:5001/api/v1/status/', function(response) {
+  $.get('http://18.234.253.121:5000/api/v1/status/', function(response) {
     if (response.status === 'OK') {
       $('div#api_status').addClass('available');
     } else {
